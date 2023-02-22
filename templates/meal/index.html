@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Meals{% endblock title %}
+
+{% block content %}
+<div class="row mt-5">
+    <div class="col-md-4"></div>
+    <div class="col-md-4 mt-5">
+        <h1>Meals</h1>
+        {% include '_partials/_messages.html' %}
+    </div>
+    <div class="col-md-4"></div>
+</div>
+<div class="row mt-5">
+    <h3></h3>
+</div>
+{% include '_partials/_timer.html' %}
+{% endblock %}

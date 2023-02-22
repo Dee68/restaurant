@@ -1,0 +1,41 @@
+body {
+    padding-top: 5rem;
+  }
+  .starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .top-content.carousel-item {
+    height: 100vh;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .top-content .carousel-item-1 {
+  background-image: url('../images/gallery1.jpg');
+} */
+.top-content.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }

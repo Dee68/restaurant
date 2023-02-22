@@ -1,0 +1,26 @@
+{% extends 'base_auth.html' %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6 mt-5">
+        <div class="card">
+            <div class="card-body">
+              <h1 class="card-title">Profile Info</h1>
+              <form action="{% url 'account:update-profile' %}" method="POST" class="mt-5">
+                {% csrf_token %}
+                {% include '_partials/_messages.html' %}
+                
+                <button type="submit" class="btn btn-success btn-block">Update</button>
+                  
+               
+              </form>
+              
+            </div>
+          </div>
+    </div>
+    <div class="col-md-3"></div>
+</div>
+{% endblock %}
